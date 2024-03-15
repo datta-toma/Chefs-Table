@@ -34,6 +34,14 @@ const Header = () => {
     <a className="btn rounded-2xl ml-5 bg-green-400"><i className="fa-solid fa-circle-user"></i></a>
   </div>
 </div>
+
+        {/* banner */}
+        <div>
+            <div>
+                <img src=""></img>
+            </div>
+        </div>
+
         </div>
     );
 };
