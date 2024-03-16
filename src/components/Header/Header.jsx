@@ -35,13 +35,6 @@ const Header = () => {
   </div>
 </div>
 
-        {/* banner */}
-        <div>
-            <div>
-                <img src=""></img>
-            </div>
-        </div>
-
         </div>
     );
 };

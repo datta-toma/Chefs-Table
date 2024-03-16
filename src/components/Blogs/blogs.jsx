@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
-const Blogs = () => {
+
+const Blogs = ({handleAddToBloglist}) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() =>{
@@ -12,6 +13,7 @@ const Blogs = () => {
 
     return (
         <div className="max-w-7xl mx-auto mt-5 ">
+            <div className="grid grid-cols-2 gap-4">
             {blogs.map(blog => (
                 <div key={blog.recipe_id} className="card w-96 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
@@ -27,15 +29,16 @@ const Blogs = () => {
                     ))}
                         </ul>
                         <div className="flex gap-8">
-                            <p><i class="fa-regular fa-clock"></i> {blog.preparing_time}</p>
-                            <p><i class="fa-solid fa-fire-flame-curved"></i> {blog.calories}</p>
+                            <p><i className="fa-regular fa-clock"></i> {blog.preparing_time}</p>
+                            <p><i className="fa-solid fa-fire-flame-curved"></i> {blog.calories}</p>
                         </div>
                         <div className="card-actions">
-                        <button class="btn btn-success rounded-2xl ">Want to Cook</button>
+                        <button onClick={() => handleAddToBloglist(blog)} className="btn btn-success rounded-2xl ">Want to Cook</button>
                         </div>
                     </div>
                 </div>
             ))}
+            </div>
         </div>
     );
 };
