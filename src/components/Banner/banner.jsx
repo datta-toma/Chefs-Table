@@ -9,8 +9,8 @@ const Banner = () => {
                 <h3 className='text-6xl font-semibold'>Discover an exceptional cooking <br></br>class tailored for you!</h3>
                 <p>Over the course of the class, which can last anywhere from a couple of hours to half a day,<br></br> your English-speaking chef will teach you a whole host of techniques the Italians use to infuse their food.<br></br>At the end of this fully customizable private experience, you’ll have the time to linger over a long lunch or dinner of the food you’ve made in class.</p>
                 <div className='flex gap-10'>
-                <button className="btn btn-outline bg-indigo-600 text-white">Secondary</button>
-                <button className="btn btn-outline btn-secondary">Secondary</button>
+                <button className="btn btn-outline bg-indigo-600 text-white">Explore Now</button>
+                <button className="btn btn-outline btn-secondary">Our Feedback</button>
                 </div>
             </div>
             </div>

@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_image": "https://i.postimg.cc/h4C2k2xS/img1.jpg",
+      "recipe_id": "001",
+      "recipe_name": "Chicken Curry",
+      "short_description": "A flavorful and aromatic chicken curry",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushrooms", "100 ml yogurt", "100 g tomatoes"],
+      "preparing_time": "45 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipe_image": "https://i.postimg.cc/pdxQhj8G/img2.jpg",
+      "recipe_id": "002",
+      "recipe_name": "Spaghetti Bolognese",
+      "short_description": "Classic Italian pasta dish with rich meat sauce",
+      "ingredients": ["400 g spaghetti", "300 g ground beef", "200 g tomatoes", "100 g onions", "1 cloves brown", "50 g parmesan cheese"],
+      "preparing_time": "30 min",
+      "calories": "550 calories"
+    },
+    {
+      "recipe_image": "https://i.postimg.cc/VsTj9pnb/img3.jpg",
+      "recipe_id": "003",
+      "recipe_name": "Vegetable Stir-Fry",
+      "short_description": "A colorful and nutritious vegetable stir-fry",
+      "ingredients": ["300 g mixed vegetables (bell peppers, broccoli, carrots)", "150 g tofu", "50 ml soy sauce", "2 cloves garlic", "1 cloves brown", "1 g chicken"],
+      "preparing_time": "25 min",
+      "calories": "300 calories"
+    },
+    {
+      "recipe_image": "https://i.postimg.cc/cHCnwBJm/img4.jpg",
+      "recipe_id": "004",
+      "recipe_name": "Salmon Teriyaki",
+      "short_description": "Grilled salmon fillets glazed with sweet teriyaki sauce",
+      "ingredients": ["500 g salmon fillets", "100 ml teriyaki sauce", "50 g sesame seeds", "1 lemon", "1 cloves honey", "1 cloves brown"],
+      "preparing_time": "35 min",
+      "calories": "400 calories"
+    },
+    {
+      "recipe_image": "https://i.postimg.cc/cHPBJbcY/img5.jpg",
+      "recipe_id": "005",
+      "recipe_name": "Caesar Salad",
+      "short_description": "Classic Caesar salad with crispy romaine lettuce and tangy dressing",
+      "ingredients": ["200 g romaine lettuce", "100 g croutons", "50 g parmesan cheese", "50 ml Caesar dressing", "1 ml milk", "1 kg bacon"],
+      "preparing_time": "20 min",
+      "calories": "250 calories"
+    },
+    {
+      "recipe_image": "https://i.postimg.cc/L8mBhfjy/img6.jpg",
+      "recipe_id": "006",
+      "recipe_name": "Fruit Smoothie",
+      "short_description": "Refreshing and nutritious fruit smoothie",
+      "ingredients": ["1 banana", "100 g strawberries", "100 g blueberries", "150 ml yogurt", "100 g mango", "100 g apple"],
+      "preparing_time": "10 min",
+      "calories": "200 calories"
+    }
+  ]
+  
