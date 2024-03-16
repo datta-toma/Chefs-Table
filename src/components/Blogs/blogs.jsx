@@ -3,13 +3,16 @@ import { useEffect } from "react";
 
 
 const Blogs = ({handleAddToBloglist}) => {
-    const [blogs, setBlogs] = useState([]);
+    const [blogs, setBlogs] = useState([], false);
+
 
     useEffect(() =>{
         fetch('blogs.json')
         .then(res => res.json())
         .then(data => setBlogs(data))
-    }, [])
+    }, []);
+
+   
 
     return (
         <div className="max-w-7xl mx-auto mt-5 ">
@@ -33,7 +36,7 @@ const Blogs = ({handleAddToBloglist}) => {
                             <p><i className="fa-solid fa-fire-flame-curved"></i> {blog.calories}</p>
                         </div>
                         <div className="card-actions">
-                        <button onClick={() => handleAddToBloglist(blog)} className="btn btn-success rounded-2xl ">Want to Cook</button>
+                        <button onClick={() => handleAddToBloglist(blog)}  className="btn btn-success rounded-2xl disabled={blog.buttonDisabled}" >Want to Cook</button>
                         </div>
                     </div>
                 </div>

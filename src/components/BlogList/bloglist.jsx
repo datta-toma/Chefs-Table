@@ -2,7 +2,7 @@
 const BlogList = ({bloglist}) => {
     return (
         <div className="w-96 mr-80 h-auto bg-base-100 shadow-xl">
-           <h1 className="font-bold text-2xl text-center border-b-2">Want to cook:  {bloglist.length} </h1>
+           <h1 className="font-bold text-2xl text-center border-b-2">Want to cook:  {bloglist.length}</h1>
 
            <table className="table-auto w-full">
         <thead>
@@ -14,7 +14,7 @@ const BlogList = ({bloglist}) => {
         </thead>
         <tbody>
           {bloglist.map(blog => (
-            <tr key={blog.recipe_id}>
+             <tr key={blog.recipe_id}> 
               <td className="border px-4 py-2">{blog.recipe_name}</td>
               <td className="border px-4 py-2">{blog.preparing_time}</td>
               <td className="border px-4 py-2">{blog.calories}  </td>
