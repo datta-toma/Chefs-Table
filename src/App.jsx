@@ -15,7 +15,6 @@ function App() {
   const [currentCook, setCurrentCook] = useState([]);
   const [reciCurrentCook, setReciCurrent] = useState([]);
   
-
   const handleAddToBloglist = (blog) => {
     if (addedBlogs.includes(blog.recipe_id)) {
       toast.error('This blog is already added!', {
@@ -30,16 +29,17 @@ function App() {
       return;
     }
 
-    setBlogList(BlogList => [...BlogList, blog]);
-    setAddedBlogs(AddedBlogs => [...AddedBlogs, blog.recipe_id]);
+      setBlogList(BlogList => [...BlogList, blog]);
+      setAddedBlogs(AddedBlogs => [...AddedBlogs, blog.recipe_id]);
   }
-  const handlePreparing = recipeId => {
-    const removedCookList = bloglist.find(blog => blog.recipe_id === recipeId); 
-    const reciveBlogList = bloglist.filter(blog => blog.recipe_id !== recipeId);
-    setCurrentCook(currentCook => [...currentCook, removedCookList]);
-    setReciCurrent(reciCurrentCook => [...reciCurrentCook, removedCookList]);
-    setBlogList(reciveBlogList);
+      const handlePreparing = recipeId => {
+      const removedCookList = bloglist.find(blog => blog.recipe_id === recipeId); 
+      const reciveBlogList = bloglist.filter(blog => blog.recipe_id !== recipeId);
+      setCurrentCook(currentCook => [...currentCook, removedCookList]);
+      setReciCurrent(reciCurrentCook => [...reciCurrentCook, removedCookList]);
+      setBlogList(reciveBlogList);
 };
+
 
    
   return (

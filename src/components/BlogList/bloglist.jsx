@@ -1,8 +1,18 @@
 
 const BlogList = ({bloglist, handlePreparing, reciCurrentCook}) => {
-
     const handlePreparingClick = recipeId => {
         handlePreparing(recipeId);
+    };
+
+    const calculateTotalTime = recipes => {
+        return recipes.reduce((total, recipe) => {
+            return total + parseFloat(recipe.preparing_time);
+        },0);
+    };
+    const calculateTotalCalories = recipes => {
+        return recipes.reduce((total, recipe) => {
+            return total + parseFloat(recipe.calories);
+        },0);
     };
 
     return (
@@ -29,6 +39,7 @@ const BlogList = ({bloglist, handlePreparing, reciCurrentCook}) => {
                     ))}
                     </tbody>
                     </table>
+                    <hr></hr>
 
 
                  <div className="mt-5 w-96 mr-80 h-3.5 bg-base-100 shadow-xl">
@@ -48,14 +59,24 @@ const BlogList = ({bloglist, handlePreparing, reciCurrentCook}) => {
                     <td>{blog.recipe_name}</td>
                     <td>{blog.preparing_time}</td>
                     <td>{blog.calories}</td>
-                  
                     </tr>
                     ))}
                     </tbody>
                     </table>
+                    <hr></hr>
+           </div> 
+
+           <div className="mt-52 w-96 mr-80 h-3.5 bg-base-100 shadow-xl">
+            <table className="table-auto w-full">
+                    <tbody>
+                    <tr> 
+                    <td className="font-bold">Total Time: {calculateTotalTime(reciCurrentCook)} min</td>
+                    <td className="font-bold">Total Calories: {calculateTotalCalories(reciCurrentCook)}</td>
+                    </tr>
+                    </tbody>
+                    </table>
 
            </div> 
-           
            
         </div>
 
